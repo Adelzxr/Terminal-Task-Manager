@@ -14,7 +14,7 @@ A retro-style terminal task management application with CRT monitor effects, bui
 
 ---
 
-## ✨ Features
+##  Features
 
 - 🎨 **Retro CRT Terminal Design** - Authentic terminal look with scanlines, glow effects, and cursor animation
 - ⌨️ **Command-Line Interface** - Familiar terminal commands for power users
@@ -27,7 +27,7 @@ A retro-style terminal task management application with CRT monitor effects, bui
 - 🔤 **Auto-Complete** - Tab to auto-complete commands
 - 🐣 **Easter Eggs** - Try `neofetch`, `fortune`, or `matrix`!
 
-## 🚀 Quick Start
+##  Quick Start
 
 1. Clone the repository:
 ```bash
@@ -93,7 +93,7 @@ priority 1704067200000 low
 - **JavaScript (ES6+)** - Classes, LocalStorage API, DOM manipulation
 - **Google Fonts** - Fira Code monospace font
 
-## 🎨 Customization
+##  Customization
 
 The terminal uses CSS custom properties for easy theming:
 
@@ -117,7 +117,7 @@ terminal-task-manager/
 └── README.md       # Documentation
 ```
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Feel free to:
 
@@ -131,7 +131,7 @@ Contributions are welcome! Feel free to:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - Inspired by classic terminal emulators
 - CRT effect techniques from various CSS experiments
