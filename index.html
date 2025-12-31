@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="crt-overlay"></div>
+    <div class="scanlines"></div>
+    
+    <div class="terminal">
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <span class="btn-close"></span>
+                <span class="btn-minimize"></span>
+                <span class="btn-maximize"></span>
+            </div>
+            <div class="terminal-title">task_manager@localhost:~</div>
+        </div>
+        
+        <div class="terminal-body">
+            <div class="output" id="output">
+                <pre class="ascii-art">
+╔════════════════════════════════════════════════════════════════╗
+║  ████████╗ █████╗ ███████╗██╗  ██╗    ███╗   ███╗ ██████╗ ██████╗  ║
+║  ╚══██╔══╝██╔══██╗██╔════╝██║ ██╔╝    ████╗ ████║██╔════╝ ██╔══██╗ ║
+║     ██║   ███████║███████╗█████╔╝     ██╔████╔██║██║  ███╗██████╔╝ ║
+║     ██║   ██╔══██║╚════██║██╔═██╗     ██║╚██╔╝██║██║   ██║██╔══██╗ ║
+║     ██║   ██║  ██║███████║██║  ██╗    ██║ ╚═╝ ██║╚██████╔╝██║  ██║ ║
+║     ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝    ╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═╝ ║
+╚════════════════════════════════════════════════════════════════╝
+                </pre>
+                <div class="welcome-msg">
+                    <span class="prompt">system@init:</span> Welcome to Terminal Task Manager v1.0.0<br>
+                    <span class="prompt">system@init:</span> Type <span class="cmd-highlight">help</span> for available commands<br>
+                    <span class="prompt">system@init:</span> Ready for input...<br><br>
+                </div>
+            </div>
+            
+            <div class="input-line">
+                <span class="prompt">guest@taskman:~$</span>
+                <form id="commandForm" onsubmit="return false;">
+                    <input type="text" id="commandInput" autofocus autocomplete="off" spellcheck="false">
+                </form>
+                <span class="cursor"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="stats-panel" id="statsPanel">
+        <div class="stats-header">
+            <span class="glitch" data-text="STATISTICS">STATISTICS</span>
+        </div>
+        <div class="stats-content">
+            <div class="stat-item">
+                <span class="stat-label">Total Tasks:</span>
+                <span class="stat-value" id="totalTasks">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Completed:</span>
+                <span class="stat-value completed" id="completedTasks">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Pending:</span>
+                <span class="stat-value pending" id="pendingTasks">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">High Priority:</span>
+                <span class="stat-value high" id="highPriority">0</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="progress-text" id="progressText">0% Complete</div>
+        </div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
