@@ -141,8 +141,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
 
-Made with ❤️ and lots of ☕
-
-⭐ Star this repo if you found it useful!
+Made with a lot of ☕
 
 </div>
